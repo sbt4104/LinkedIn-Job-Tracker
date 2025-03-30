@@ -74,6 +74,7 @@ function doPost(e) {
 4. Click **Deploy**
 5. When prompted, authorize the script to access your Google Sheet
 6. **Copy the Web App URL** provided in the success message - you'll need this for the next step
+7. Run the project by clicking on Run
 
 ### Step 4: Configure the Extension
 
@@ -87,11 +88,10 @@ function doPost(e) {
 
 ### Step 5: Configure the Extension
 
-1. Download the project from github unzip it and 
-2. Click the LinkedIn Job Tracker extension icon in your browser toolbar
-3. Paste the Web App URL you copied from the Apps Script deployment
-4. Click **Save URL**
-5. You'll see a confirmation message when saved successfully
+1. Click the LinkedIn Job Tracker extension icon in your browser toolbar
+2. Paste the Web App URL you copied from the Apps Script deployment
+3. Click **Save URL**
+4. You'll see a confirmation message when saved successfully
 
 ## Using the Extension
 
