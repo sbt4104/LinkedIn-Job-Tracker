@@ -76,7 +76,8 @@ function doPost(e) {
 6. **Copy the Web App URL** provided in the success message - you'll need this for the next step
 
 ### Step 4: Configure the Extension
-Go to the GitHub repository: [[YourGitHubRepoLink](https://github.com/sbt4104/LinkedIn-Job-Tracker/edit/main/)]
+
+1. Go to the GitHub repository: [[YourGitHubRepoLink](https://github.com/sbt4104/LinkedIn-Job-Tracker/edit/main/)]
 2. Click the green "Code" button and select "Download ZIP"
 3. Extract the ZIP file to a folder on your computer
 4. Open Chrome and navigate to `chrome://extensions/`
