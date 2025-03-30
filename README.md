@@ -76,11 +76,21 @@ function doPost(e) {
 6. **Copy the Web App URL** provided in the success message - you'll need this for the next step
 
 ### Step 4: Configure the Extension
+Go to the GitHub repository: [[YourGitHubRepoLink](https://github.com/sbt4104/LinkedIn-Job-Tracker/edit/main/)]
+2. Click the green "Code" button and select "Download ZIP"
+3. Extract the ZIP file to a folder on your computer
+4. Open Chrome and navigate to `chrome://extensions/`
+5. Enable "Developer mode" using the toggle in the top-right corner
+6. Click "Load unpacked" and select the folder containing the extracted extension files
+7. The LinkedIn Job Tracker extension should now appear in your extensions list
 
-1. Click the LinkedIn Job Tracker extension icon in your browser toolbar
-2. Paste the Web App URL you copied from the Apps Script deployment
-3. Click **Save URL**
-4. You'll see a confirmation message when saved successfully
+### Step 5: Configure the Extension
+
+1. Download the project from github unzip it and 
+2. Click the LinkedIn Job Tracker extension icon in your browser toolbar
+3. Paste the Web App URL you copied from the Apps Script deployment
+4. Click **Save URL**
+5. You'll see a confirmation message when saved successfully
 
 ## Using the Extension
 
