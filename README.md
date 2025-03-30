@@ -62,3 +62,47 @@ function doPost(e) {
    })).setMimeType(ContentService.MimeType.JSON);
  }
 }
+```
+
+### Step 3: Deploy the Web App
+
+1. Click **Deploy > New deployment**
+2. Select **Web app** as the deployment type
+3. Configure the following settings:
+  * Execute as: **Me**
+  * Who has access: **Anyone**
+4. Click **Deploy**
+5. When prompted, authorize the script to access your Google Sheet
+6. **Copy the Web App URL** provided in the success message - you'll need this for the next step
+
+### Step 4: Configure the Extension
+
+1. Click the LinkedIn Job Tracker extension icon in your browser toolbar
+2. Paste the Web App URL you copied from the Apps Script deployment
+3. Click **Save URL**
+4. You'll see a confirmation message when saved successfully
+
+## Using the Extension
+
+1. Browse LinkedIn job listings
+2. When you find a job you want to save, right-click anywhere on the page
+3. Select **Add Job to Sheet** from the context menu
+4. You'll see a confirmation when the job is added to your sheet
+
+## Troubleshooting
+
+* If jobs aren't being added, make sure your Web App URL is correct
+* If job details aren't captured correctly, try refreshing the LinkedIn page
+* Check that your sheet has the correct column headers in the first row
+
+## Privacy Notice
+
+This extension:
+* Only accesses data on LinkedIn pages
+* Only sends data to your own Google Sheet
+* Does not collect or store your data anywhere else
+* Does not track your browsing activity
+
+## Support
+
+If you encounter any issues or have questions, please create a issue or just send a PR here.
