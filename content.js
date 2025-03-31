@@ -37,7 +37,9 @@ function extractJobDetails() {
     let titleEl = document.querySelector('.job-details-jobs-unified-top-card__job-title');
     let companyEl = document.querySelector('.job-details-jobs-unified-top-card__company-name');
     let locationEl = document.querySelector('.job-details-jobs-unified-top-card__primary-description-container');
-    
+    let descriptionEl = document.querySelector('.job-details-jobs-unified-description__content');
+    let hiringManagerEl = document.querySelector('.jobs-poster__name');
+
     // Alternative selectors for different LinkedIn pages
     if (!titleEl) {
       titleEl = document.querySelector('.top-card-layout__title');
@@ -48,16 +50,26 @@ function extractJobDetails() {
     if (!locationEl) {
       locationEl = document.querySelector('.topcard__flavor-row .topcard__flavor');
     }
+    if (!descriptionEl) {
+      descriptionEl = document.querySelector('.jobs-description__content');
+    }
+    if (!hiringManagerEl) {
+      hiringManagerEl = document.querySelector('.jobs-poster__name, .jobs-poster__title');
+    }
 
     // Debug selectors
     console.log("Title element found:", titleEl);
     console.log("Company element found:", companyEl);
     console.log("Location element found:", locationEl);
+    console.log("Description element found:", descriptionEl);
+    console.log("Hiring Manager element found:", hiringManagerEl);
 
     return {
       title: titleEl ? titleEl.textContent.trim() : 'N/A',
       company: companyEl ? companyEl.textContent.trim() : 'N/A',
       location: locationEl ? locationEl.textContent.trim() : 'N/A',
+      description: descriptionEl ? descriptionEl.textContent.trim() : 'N/A',
+      hiringManager: hiringManagerEl ? hiringManagerEl.textContent.trim() : 'N/A',
       url: window.location.href,
       dateAdded: new Date().toLocaleDateString()
     };

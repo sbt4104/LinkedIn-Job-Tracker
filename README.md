@@ -5,7 +5,7 @@ Save LinkedIn jobs directly to your Google Sheet with a single right-click. Trac
 ## Features
 
 - **One-Click Saving**: Capture job details with a simple right-click
-- **Automatic Data Extraction**: Saves job title, company, location, URL, and date
+- **Automatic Data Extraction**: Saves job title, company, location, job description, hiring manager details, URL, and date
 - **Private & Secure**: Your data stays in your personal Google Sheet
 - **Customizable**: Use your own Google Sheet for complete control
 
@@ -18,8 +18,10 @@ Save LinkedIn jobs directly to your Google Sheet with a single right-click. Trac
   - A1: Title
   - B1: Company
   - C1: Location
-  - D1: URL
-  - E1: Date Added
+  - D1: Job Description
+  - E1: Hiring Manager
+  - F1: URL
+  - G1: Date Added
 
 ### Step 2: Add the Google Apps Script
 
@@ -45,6 +47,8 @@ function doPost(e) {
      data.title,
      data.company,
      data.location,
+     data.description,
+     data.hiringManager,
      data.url,
      data.dateAdded
    ]);
