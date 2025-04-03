@@ -82,7 +82,7 @@ function doPost(e) {
 
 ### Step 4: Configure the Extension
 
-1. Go to the GitHub repository: [[YourGitHubRepoLink](https://github.com/sbt4104/LinkedIn-Job-Tracker/edit/main/)]
+1. Go to the GitHub repository: [[Link](https://github.com/sbt4104/LinkedIn-Job-Tracker/)]
 2. Click the green "Code" button and select "Download ZIP"
 3. Extract the ZIP file to a folder on your computer
 4. Open Chrome and navigate to `chrome://extensions/`
